@@ -2,7 +2,7 @@
 
 Uno script Lua per REAPER che genera automaticamente una traccia di guida con conteggi vocali e annunci di sezione, perfetto per sessioni di registrazione dal vivo, produzione musicale e post-produzione audio.
 
-![Esempio di traccia COUNTER GUIDE in REAPER](https://via.placeholder.com/800x400.png?text=COUNTER+GUIDE+Track+Example) 
+![Esempio di traccia COUNTER GUIDE in REAPER](cover.png) 
 *(Sostituisci con un'immagine reale del tuo script in azione)*
 
 ## 🌟 Funzionalità principali
