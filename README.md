@@ -38,23 +38,6 @@ Uno script Lua per REAPER che genera automaticamente una traccia di guida con co
 ```bash
 mkdir -p "REAPER/Scripts/Cockos/Counter_Script/"
 ```
-    - Importa la cartella CounterSample
+    - Importa la cartella CounterSample 
 
-    🎛️ Utilizzo base
------------------
-
-1.  Organizza il tuo progetto con regioni nominate (es. "Verse 1", "Chorus", "Bridge")
-    
-2.  Seleziona un intervallo di tempo che copra le regioni interessate
-    
-3.  Esegui lo script tramite:
-    
-    *   Menù Actions > Scripts > Counter Guide
-        
-    *   O tramite la scorciatoia assegnata
-        
-4.  Troverai una nuova traccia "COUNTER GUIDE" con:
-    
-    *   Gli annunci delle sezioni
-        
-    *   I conteggi ritmici prima di ogni cambio
+    **Oppure**
