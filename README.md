@@ -37,6 +37,40 @@ Uno script Lua per REAPER che genera automaticamente una traccia di guida con co
     - Apri il terminale ed esegui questo comando:
 ` mkdir -p "REAPER/Scripts/Cockos/Counter_Script/" `
 
-    - Importa la cartella CounterSample 
+    - Importa la cartella CounterSample **Oppure**  crea la cartella con i tuoi campioni personalizzati, chiama la cartella "CounterSample" e importala nella folder "Counter_Script"
 
-    **Oppure**
+
+
+ ## ⌨️ Assegnazione Scorciatoia (Opzionale)
+
+Per assegnare una scorciatoia da tastiera:
+
+1. Apri REAPER
+2. Vai su `Actions > Show Action List`
+3. Cerca "Counter Guide"
+4. Clicca su "Add" per assegnare un tasto di scelta rapida
+
+## 🎛️ Utilizzo Base
+
+1. **Prepara il progetto**:
+   - Organizza con regioni nominate (es. "Verse 1", "Chorus", "Bridge")
+
+2. **Seleziona intervallo**:
+   - Evidenzia l'area temporale che copre le regioni interessate
+
+3. **Esegui lo script**:
+   - Dal menu: `Actions > Scripts > Counter Guide`
+   - Oppure usa la scorciatoia assegnata
+
+4. **Risultato**:
+   - Nuova traccia "COUNTER GUIDE" con:
+     - Annunci delle sezioni
+     - Conteggi ritmici pre-transizione
+
+## 🎚️ Flussi Avanzati
+
+### Per Sessioni di Registrazione
+```markdown
+1. Crea regioni per ogni take
+2. Esegui lo script per riferimenti vocali
+3. Disabilita traccia durante l'export finale
