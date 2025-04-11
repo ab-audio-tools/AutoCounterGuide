@@ -37,7 +37,7 @@ Uno script Lua per REAPER che genera automaticamente una traccia di guida con co
     - Apri il terminale ed esegui questo comando:
 ` mkdir -p "REAPER/Scripts/Cockos/Counter_Script/" `
 
-    - Importa la cartella CounterSample **Oppure**  crea la cartella con i tuoi campioni personalizzati, chiama la cartella "CounterSample" e importala nella folder "Counter_Script"
+    - Importa la cartella CounterSample
 
 
 
@@ -53,7 +53,7 @@ Per assegnare una scorciatoia da tastiera:
 ## 🎛️ Utilizzo Base
 
 1. **Prepara il progetto**:
-   - Organizza con regioni nominate (es. "Verse 1", "Chorus", "Bridge")
+   - Organizza con regioni (**N.B. non marker**) nominate (es. "Verse 1", "Chorus", "Bridge")
 
 2. **Seleziona intervallo**:
    - Evidenzia l'area temporale che copre le regioni interessate
