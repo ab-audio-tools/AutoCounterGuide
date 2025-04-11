@@ -53,7 +53,8 @@ Per assegnare una scorciatoia da tastiera:
 ## 🎛️ Utilizzo Base
 
 1. **Prepara il progetto**:
-   - Organizza con regioni (**N.B. non marker**) nominate (es. "Verse 1", "Chorus", "Bridge")
+   - Organizza con regioni (**N.B. non marker**) nominate (es. "VERSE", "CHORUS", "BRIDGE") 
+  ~I nomi delle regioni devono essere scritti in maiuscolo e senza nomi~ 
 
 2. **Seleziona intervallo**:
    - Evidenzia l'area temporale che copre le regioni interessate
