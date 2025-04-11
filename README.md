@@ -95,6 +95,3 @@ I contributi sono benvenuti! Ecco come aiutare:
 ## 📜 Licenza
 
 **MIT License** - Usa, modifica e distribuisci liberamente
-
-```text
-Copyright (c) [2025] [Antonio Bosco]
