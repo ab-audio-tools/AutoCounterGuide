@@ -35,9 +35,8 @@ Uno script Lua per REAPER che genera automaticamente una traccia di guida con co
     
 3. **Crea la struttura delle cartelle**:
     - Apri il terminale ed esegui questo comando:
-```bash
-mkdir -p "REAPER/Scripts/Cockos/Counter_Script/"
-```
+` mkdir -p "REAPER/Scripts/Cockos/Counter_Script/" `
+
     - Importa la cartella CounterSample 
 
     **Oppure**
