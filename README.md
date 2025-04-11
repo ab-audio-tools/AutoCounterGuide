@@ -54,7 +54,7 @@ Per assegnare una scorciatoia da tastiera:
 
 1. **Prepara il progetto**:
    - Organizza con regioni (**N.B. non marker**) nominate (es. "VERSE", "CHORUS", "BRIDGE") 
-  ~I nomi delle regioni devono essere scritti in maiuscolo e senza nomi~ 
+  >I nomi delle regioni devono essere scritti in maiuscolo e senza nomi
 
 2. **Seleziona intervallo**:
    - Evidenzia l'area temporale che copre le regioni interessate
@@ -68,10 +68,33 @@ Per assegnare una scorciatoia da tastiera:
      - Annunci delle sezioni
      - Conteggi ritmici pre-transizione
 
-## 🎚️ Flussi Avanzati
+## 🐛 Troubleshooting
 
-### Per Sessioni di Registrazione
-```markdown
-1. Crea regioni per ogni take
-2. Esegui lo script per riferimenti vocali
-3. Disabilita traccia durante l'export finale
+
+| Problema                  | Soluzione                      |
+|---------------------------|--------------------------------|
+| "File non trovato"        | Verifica percorso e nomi file  |
+| Conteggi non allineati    | Controlla il BPM del progetto  |
+| Errori Lua                | Aggiorna REAPER all'ultima versione |
+| Traccia non creata        | Controlla i permessi di scrittura |
+
+
+## 🤝 Contributi
+
+I contributi sono benvenuti! Ecco come aiutare:
+
+1. **Forka** il repository
+2. **Crea un branch**:  
+   `git checkout -b feature/improvement`
+3. **Fai commit** delle modifiche:  
+   `git commit -am 'Aggiungi nuova funzionalità'`
+4. **Pusha** il branch:  
+   `git push origin feature/improvement`
+5. **Crea una Pull Request**
+
+## 📜 Licenza
+
+**MIT License** - Usa, modifica e distribuisci liberamente
+
+```text
+Copyright (c) [2025] [Antonio Bosco]
