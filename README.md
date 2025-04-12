@@ -1,13 +1,105 @@
-# REAPER Counter Guide Script 🎚️⏱️
+# AutoCounterGuide REAPER Count-in Guide Script 🎚️⏱️
 
-Uno script Lua per REAPER che genera automaticamente una traccia di guida con conteggi vocali e annunci di sezione, perfetto per sessioni di registrazione dal vivo, produzione musicale e post-produzione audio.
+## 🇬🇧 English
+**AutoCounterGuide** is a Lua script for REAPER that automatically generates a guide track with vocal counts and section announcements, perfect for live recording sessions, music production, audio post-production, and live backing tracks.
 
-![Esempio di traccia COUNTER GUIDE in REAPER](cover.png) 
-*(Sostituisci con un'immagine reale del tuo script in azione)*
+![Example of COUNTER GUIDE track in REAPER](cover.png)
+
+## 🌟 Key Features
+
+- **Automatic creation** of the "COUNTER GUIDE" track (or reuses it if it exists)
+- **Smart analysis** of regions within the time selection
+- **Advanced counting system**:
+  - Next section announcement on the 4th beat before the end
+  - "two, three, four" count on the following 3 beats
+- **Special pre-count** (6 beats) when the next section is "Intro"
+- **Automatic cleanup** of existing items in the time selection
+- **Debug console** with detailed execution information
+
+## 🛠️ Technical Requirements
+
+- REAPER version 6.x or 7.x
+- Write permissions in REAPER's scripts folder
+
+## 📥 Step-by-Step Installation
+
+1. **Download the script**:
+   - Clone the repository: `git clone https://github.com/ab-audio-tools/AutoCounterGuide.git`
+   - Alternatively download the source code
+2. **Place the script**:
+   - Windows: C:\Users\AppData\Roaming\REAPER\Scripts
+   - MacOS: ~/Library/Application Support/REAPER/Scripts/
+   - Linux: ~/.config/REAPER/Scripts/
+    
+3. **Create folder structure**:
+   - Open terminal and run this command:
+` mkdir -p "REAPER/Scripts/Cockos/Counter_Script/" `
+
+   - Import the CounterSample folder
+
+ ## ⌨️ Keyboard Shortcut Assignment (Optional)
+
+To assign a keyboard shortcut:
+
+1. Open REAPER
+2. Go to `Actions > Show Action List`
+3. Search for "Counter Guide"
+4. Click "Add" to assign a hotkey
+
+## 🎛️ Basic Usage
+
+1. **Prepare your project**:
+   - Organize with named regions (**NOTE: not markers**) (e.g., "VERSE", "CHORUS", "BRIDGE")
+   >Region names must be in uppercase and without numbers
+
+2. **Select time range**:
+   - Highlight the time area covering the relevant regions
+
+3. **Run the script**:
+   - From menu: `Actions > Scripts > Counter Guide`
+   - Or use your assigned shortcut
+
+4. **Result**:
+   - New "COUNTER GUIDE" track containing:
+     - Section announcements
+     - Pre-transition rhythmic counts
+
+## 🐛 Troubleshooting
+
+
+| Issue                      | Solution                      |
+|----------------------------|-------------------------------|
+| "File not found"           | Verify path and filenames     |
+| Misaligned counts          | Check project BPM             |
+| Lua errors                 | Update REAPER to latest version |
+| Track not created          | Check write permissions       |
+
+
+## 🤝 Contributions
+
+Contributions are welcome! Here's how to help:
+
+1. **Fork** the repository
+2. **Create a branch**:  
+   `git checkout -b feature/improvement`
+3. **Commit your changes**:  
+   `git commit -am 'Add new feature'`
+4. **Push the branch**:  
+   `git push origin feature/improvement`
+5. **Create a Pull Request**
+
+## 📜 License
+
+**MIT License** - Use, modify and distribute freely
+
+## 🇮🇹 Italiano
+**AutoCounterGuide** è uno script Lua per REAPER che genera automaticamente una traccia di guida con conteggi vocali e annunci di sezione, perfetto per sessioni di registrazione dal vivo, produzione musicale, post-produzione audio e live backing tracks.
+
+![Esempio di traccia COUNTER GUIDE in REAPER](cover.png)
 
 ## 🌟 Funzionalità principali
 
-- **Creazione automatica** della traccia "COUNTER GUIDE" (o riutilizzo se esiste)
+- **Creazione automatica** della traccia "COUNTER GUIDE" (o riutilizza, se esiste)
 - **Analisi intelligente** delle regioni nella time selection
 - **Sistema di conteggio avanzato**:
   - Annuncio della prossima sezione al 4° battito prima della fine
@@ -20,16 +112,14 @@ Uno script Lua per REAPER che genera automaticamente una traccia di guida con co
 
 - REAPER versione 6.x o 7.x
 - Permessi di scrittura nella cartella degli script di REAPER
-- File audio dei conteggi in formato WAV (16/24-bit, 44.1/48kHz consigliati)
 
 ## 📥 Installazione passo-passo
 
 1. **Scarica lo script**:
-   - [Clicca qui per scaricare counter_guide.lua](https://example.com/download) *(sostituisci con link reale)*
-   - Oppure copia il codice sorgente in un file con estensione `.lua`
-
+   - Clona la repository 'git clone https://github.com/ab-audio-tools/AutoCounterGuide.git'
+  In alternativa scarica il source code
 2. **Posiziona lo script**:
-    - Windows: C:\Users[Tuonome]\AppData\Roaming\REAPER\Scripts
+    - Windows: C:\Users\AppData\Roaming\REAPER\Scripts
     - MacOS: ~/Library/Application Support/REAPER/Scripts/
     - Linux: ~/.config/REAPER/Scripts/
     
@@ -38,8 +128,6 @@ Uno script Lua per REAPER che genera automaticamente una traccia di guida con co
 ` mkdir -p "REAPER/Scripts/Cockos/Counter_Script/" `
 
     - Importa la cartella CounterSample
-
-
 
  ## ⌨️ Assegnazione Scorciatoia (Opzionale)
 
